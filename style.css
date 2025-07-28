@@ -12,7 +12,7 @@
 
 
 
-.navbar {
+/* .navbar {
     height: 12vh;
     width: 100%;
     display: flex;
@@ -75,7 +75,133 @@ i.fa-solid.fa-bell,
 i.fa-solid.fa-magnifying-glass {
     padding-right: 20px;
     font-size: 23px;
+} */
+
+
+
+
+
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #11111146;
+  color: white;
+  padding: 15px 30px;
+  position: relative;
 }
+.navbar:hover{
+    background-color: #000;
+}
+/* Nav Links Hidden by Default */
+.nav-links {
+  display: none;
+  list-style: none;
+  flex-direction: column;
+  background-color: #222;
+  padding: 20px;
+  margin: 0;
+  position: absolute;
+  top: 60px; /* below navbar */
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  
+}
+
+.nav-links li {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links li a:hover{
+    color: #8c6c6c;
+}
+/* Show when active */
+.nav-links.active {
+  display: flex;
+}
+
+.menu i.fa-solid.fa-bars {
+    padding-left: 50px;
+    font-size: 23px;
+}
+
+.menu :hover {
+    
+    transition: 0.2s ease-in;
+}
+
+
+.logo h2 {
+    font-size: 36px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo :hover {
+   
+    transition: 0.2s ease-in;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.icon :hover {
+   
+    transition: 0.2s ease-in;
+}
+
+
+i.fa-solid.fa-bell,
+i.fa-solid.fa-magnifying-glass {
+    padding-right: 20px;
+    font-size: 23px;
+}
+
+  @media (max-width: 768px) {
+      .menu {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #222;
+        width: 100%;
+        padding: 20px 0;
+        z-index: 10;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links li {
+        padding: 10px 0;
+        text-align: center;
+      }
+    }
+
+
+
 
 .container {
     margin: 0;
@@ -208,7 +334,9 @@ i.fa-solid.fa-magnifying-glass {
     color: #ccc;
 }
 
-
+.trending-heading h1{
+    background-color: #000;
+}
 .trending-heading h1 {
     padding-top: 40px;
     font-size: 50px;
