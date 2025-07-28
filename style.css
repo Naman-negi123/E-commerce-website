@@ -668,6 +668,7 @@ footer.footer-section {
 
     .footer-left {
         text-align: center;
+        margin-right: 50px;
     }
 
     .footer-links {
@@ -678,6 +679,7 @@ footer.footer-section {
 
     .footer-links div {
         width: 100%;
+        margin-right: 50px;
     }
 
     .footer-links h4 {
